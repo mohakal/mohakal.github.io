@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: green;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-right: 1px solid black;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.footer h1 {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.main div {
+    padding: 10px;
+    background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);;
+}
+
+/**
+    Flex grow
+*/
+.flex-grow-s-1 {
+    flex: 16%;
+}
+
+.flex-grow-s-2 {
+    flex: 31%;
+}
+
+.flex-grow-s-3 {
+    flex: 50%;
+}
+
+.flex-grow-s-4 {
+    flex: 66%;
+}
+
+.flex-grow-s-5 {
+    flex: 83%;
+}
+
+.flex-grow-s-6 {
+    flex: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .flex-grow-l-1 {
+        flex: 16%;
+    }
+    
+    .flex-grow-l-2 {
+        flex: 31%;
+    }
+    
+    .flex-grow-l-3 {
+        flex: 50%;
+    }
+    
+    .flex-grow-l-4 {
+        flex: 66%;
+    }
+    
+    .flex-grow-l-5 {
+        flex: 83%;
+    }
+    
+    .flex-grow-l-6 {
+        flex: 100%;
+    }
+}

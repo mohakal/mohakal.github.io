@@ -1,0 +1,15 @@
+.menu div {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-right: 1px solid black;
+}
+
+.main {
+    height: 300px;
+}
+
+.main div {
+    padding: 10px;
+    background: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);;
+}

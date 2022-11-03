@@ -1,0 +1,36 @@
+body{
+    background-color: darkgrey;
+    font-family: Trebuchet MS;
+}
+h1,h3{
+    color: #6F84FF;
+}
+p {
+    color: white;
+}
+li{
+    color: white;
+}
+a {
+  color: red;
+}
+a :hover{
+    color:blue;
+}
+.imaageDiv {
+    position: relative;
+    float: left;
+}
+#happyIamge {
+    width: 350px;
+    height: 400px;
+    margin:2px;
+}
+#sadImage {
+    width: 350px;
+    height: 400px;
+    margin:2px;
+}
+span {
+    color: white;
+}
