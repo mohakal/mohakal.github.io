@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Closure</title>
+    <meta charset="utf-8" />
+    <script>
+      function Employee() {
+        var name;
+        var age;
+        var salary;
+
+        function getName() {
+          return name;
+        }
+
+        function getAge() {
+          return age;
+        }
+
+        function getSalary() {
+          return salary;
+        }
+
+        function setName(n) {
+          name = n;
+        }
+
+        function setAge(a) {
+          age = a;
+        }
+
+        function setSalary(s) {
+          salary = s;
+        }
+
+        function increaseSalary(percentage) {
+          setSalary(getSalary() + getSalary() * percentage / 100);
+        }
+
+        function incrementAge() {
+          setAge(getAge() + 1);
+        }
+
+        return {
+          setName: setName,
+          getName: getName,
+          setAge: setAge,
+          setSalary: setSalary,
+          increaseSalary: increaseSalary,
+          incrementAge: incrementAge
+        }
+      }
+
+      Employee.prototype.address = "";
+      Employee.prototype.setAddress = function (address) {
+        this.address = address;
+      };
+      Employee.prototype.getAddress = function () {
+        return this.address;
+      };
+
+      var e = new Employee();
+      e.setAddress("1000 N 4th ST");
+      console.log(e.getAddress());
+    </script>
+  </head>
+  <body>
+    <h3>Question 1</h3>
+    <code>
+      <pre>
+        var count = {
+          counter: 0,
+          add: function () {
+            counter++;
+          },
+          reset: function () {
+            counter = 0;
+          }
+        }
+      </pre>
+    </code>
+    <h3>Question 2</h3>
+    <code>
+      <pre>
+        
+      </pre>
+    </code>
+    <h3>Question 3</h3>
+    <code>
+      <pre>
+        function make_adder(inc) {
+          var counter = 0;
+          return function() {
+            return counter += inc;
+          }
+        }
+      </pre>
+    </code>
+    <h3>Question 4</h3>
+    <code>
+      <pre>
+        
+      </pre>
+    </code>
+    <h3>Question 5</h3>
+    <code>
+      <pre>
+        function Employee() {
+          var name;
+          var age;
+          var salary;
+  
+          function getName() {
+            return name;
+          }
+  
+          function getAge() {
+            return age;
+          }
+  
+          function getSalary() {
+            return salary;
+          }
+  
+          function setName(n) {
+            name = n;
+          }
+  
+          function setAge(a) {
+            age = a;
+          }
+  
+          function setSalary(s) {
+            salary = s;
+          }
+  
+          function increaseSalary(percentage) {
+            setSalary(getSalary() + getSalary() * percentage / 100);
+          }
+  
+          function incrementAge() {
+            setAge(getAge() + 1);
+          }
+  
+          return {
+            setName: setName,
+            setAge: setAge,
+            setSalary: setSalary,
+            increaseSalary: increaseSalary,
+            incrementAge: incrementAge
+          }
+        }
+      </pre>
+    </code>
+    <h3>Question 6</h3>
+    <code>
+      <pre>
+        Employee.prototype.address = "";
+        Employee.prototype.setAddress = function (address) {
+          this.address = address;
+        };
+        Employee.prototype.getAddress = function () {
+          return this.address;
+        };
+      </pre>
+    </code>
+  </body>
+</html>

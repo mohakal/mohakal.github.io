@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scope</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h3>Question 1</h3>
+    <ul>
+        <li>undefined: because the x variable hoisted in the function and assigned in the end of the function.</li>
+        <li>8: because a is the first param for the function c, and it has the value 8.</li>
+        <li>8: because b has the value of a wich is 8.</li>
+        <li>9: because b is the secound param for the function c, and it has the value 9.</li>
+        <li>10: because b is out of the scope for the c or f function, and the functions use another variable named b.</li>
+        <li>1: because x is out of the scope for the c or f function, and the functions use another variable named x.</li>
+    </ul>
+    <h3>Question 2</h3>
+    <ul>
+        <li>Global variables can be accessed any scope of the program, but Local variables can not accessed out side of it's scope.</li>
+    </ul>
+    <h3>Question 3</h3>
+    <ul>
+        <li>A: False, Statements in Scope A don't have access to variables defined in Scope B and C.</li>
+        <li>B: True, Statements in Scope B have access to variables defined in Scope A.</li>
+        <li>C: False, Statements in Scope B don't have access to variables defined in Scope C.</li>
+        <li>D: True, Statements in Scope C have access to variables defined in Scope A.</li>
+        <li>E: True, Statements in Scope C have access to variables defined in Scope B.</li>
+    </ul>
+    <h3>Question 4</h3>
+    <ul>
+        <li>81: because x is a global variable.</li>
+        <li>25: because x changed to 5</li>
+    </ul>
+    <h3>Question 5</h3>
+    <ul>
+        <li>1: because foo variable is re-declared in the bar function so it hoisted at the beginning of the function and it's value is undefined.</li>
+    </ul>
+  </body>
+</html>
